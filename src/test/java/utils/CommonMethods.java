@@ -24,6 +24,8 @@ public class CommonMethods extends PageInitializer {
     public static void openBrowserAndLaunchApplication() throws IOException {
 
         switch (ConfigReader.read("browser")){
+
+
             case "Chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
